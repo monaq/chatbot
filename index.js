@@ -114,6 +114,6 @@ app.post('/message',function (req, res) {
 });
 
 //9000포트 서버 ON
-app.listen(9000, function() {
-  console.log('server start on 9000')
+app.listen(8080, function() {
+  console.log('server start on 8080')
 });
