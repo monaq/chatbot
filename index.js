@@ -54,10 +54,8 @@ app.post('/message',function (req, res) {
           'content-type': 'application/json'
       }).send(JSON.stringify(massage));
     }
-    //메롱이라고 입력되었다면
     else if(_obj.content == '처음만난날')
     {
-      //"죽는다."이라고 메시지 보내고
       //'안녕' '누구니' 버튼 보여줌
       let massage = {
           "message": {
