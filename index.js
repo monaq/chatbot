@@ -7,6 +7,10 @@ app.use(bodyParser.json());
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', function(req, res){
+  res.json('index')
+});
+
 //초기 상태 get
 app.get('/keyboard', function(req, res){
   const menu = {
