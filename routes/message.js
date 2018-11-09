@@ -12,7 +12,7 @@ router.post("/", function(req, res, next) {
   const menu = {
     //2
     type: "buttons",
-    buttons: ["안녕", "처음만난 날은?"]
+    buttons: ["안녕", "이자식이?"]
   };
   var res_object; //3
   if (object.type === "text") {
@@ -24,11 +24,11 @@ router.post("/", function(req, res, next) {
         },
         keyboard: menu
       };
-    } else if (object.content === "처음만난 날은?") {
+    } else if (object.content === "이자식이?") {
       //5
       res_object = {
         message: {
-          text: "2018년 4월 27일이야!"
+          text: "인사가 박하구나."
         },
         keyboard: menu
       };
