@@ -15,8 +15,8 @@ router.post("/", function(req, res, next) {
     buttons: ["안녕", "처음만난 날은?"]
   };
   var res_object; //3
-  if (object.type == "text") {
-    if (object.content == "안녕") {
+  if (object.type === "text") {
+    if (object.content === "안녕") {
       //4
       res_object = {
         message: {
@@ -24,7 +24,7 @@ router.post("/", function(req, res, next) {
         },
         keyboard: menu
       };
-    } else if (object.content == "처음만난 날은?") {
+    } else if (object.content === "처음만난 날은?") {
       //5
       res_object = {
         message: {
